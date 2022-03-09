@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class Temp {
+        constructor(doC) {
+            this.doC=doC;
+        }
+        setNhietDo(doC){
+            this.doC=doC;
+        }
+        getCsangF(){
+            return this.doC*1.8+32;
+        }
+        getCsangKelvin(){
+            return this.doC+273;
+        }
+    }
+    let Temp1= new Temp(30);
+    alert(Temp1.getCsangF()+' '+Temp1.getCsangKelvin())
+</script>
